@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #5a2a49;
+  background: linear-gradient(135deg, #ffd6e7 0%, #ffc0cb 40%, #ebd8ff 100%);
+  background-attachment: fixed;
+}
+
+.dark body {
+  color: #fbe4f1;
+  background: linear-gradient(135deg, #1e1030 0%, #3a1b4f 55%, #4b2358 100%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  /* Efeito glassmorphism suave */
+  .glass {
+    @apply border border-white/60 bg-white/40 backdrop-blur-xl shadow-soft;
+  }
+  .dark .glass {
+    @apply border-white/10 bg-white/5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
