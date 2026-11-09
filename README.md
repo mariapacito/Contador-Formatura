@@ -1,22 +1,30 @@
-# 🎀 contador-formatura
+# 🎓 Contador Formatura
 
-Contagem regressiva fofinha para a formatura (**18/12/2026**), feita com Next.js 14, TypeScript, Tailwind CSS, Framer Motion e Lucide React.
+Um contador regressivo desenvolvido com Next.js para acompanhar o tempo restante até a formatura em **18/12/2026**.
 
-## Rodar localmente
+## ✨ Funcionalidades
+
+- Contagem regressiva em tempo real
+- Dias, horas, minutos e segundos
+- Atualização automática a cada segundo
+- Design fofo em tons de rosa 💖
+- Responsivo para celular e computador
+
+## 🚀 Tecnologias
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## 📅 Data da Formatura
+
+**18 de dezembro de 2026** 🎉
+
+## 💻 Executar o projeto
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abra http://localhost:3000.
-
-## Mudar a data-alvo
-
-Copie `.env.example` para `.env.local` e edite `NEXT_PUBLIC_TARGET_DATE` (formato `AAAA-MM-DDTHH:MM:SS`, horário local de quem acessa). Ou altere o valor padrão em `lib/config.ts`.
-
-## Deploy na Vercel
-
-1. Suba o repositório para o GitHub.
-2. Em vercel.com, clique em **Add New → Project** e importe `contador-formatura`.
-3. Mantenha as configurações detectadas (Next.js) e clique em **Deploy**.
